@@ -8,10 +8,10 @@
 
     <title>Currency</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 
-<body onload="Bind()">
+<body onload="Bind();">
 
     <div id="container" class="card text-center shadow-lg">
         <div class="card-header  bg-dark text-white">
@@ -22,7 +22,8 @@
                 <table id="myTable">
                     <tr>
                         <td>
-                            <select id="from" class="myDropdown bg-secondary text-white form-control" onchange="Bind();" style="width: auto;">
+                            <select id="from" class="myDropdown bg-secondary text-white form-control" onchange="Bind();"
+                                style="width: auto;">
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     <option class="dropdown-item text-white" value="EUR" selected>EUR</option>
                                     <option class="dropdown-item text-white" value="CNY">CNY</option>
@@ -33,8 +34,9 @@
                         </td>
                         <td>
                             <div>
-                                  <input id="fromAmount" class="form-control-up" type="text" value="1" disabled>
-                                  <input id="fromAmount-equation" class="form-control-up text-muted" type="text" value="0" disabled>
+                                <input id="fromAmount" class="form-control-up" type="text" value="1" disabled>
+                                <input id="fromAmount-equation" class="form-control-up text-muted" type="text" value="0"
+                                    disabled>
                             </div>
                         </td>
                     </tr>
@@ -74,19 +76,19 @@
             <button id="btnNum3" class="btn btn-dark text-white btn-lg" onclick="btnNum3Press();convertCurrency()">3</button>
             <button id="btnTimes" class="btn btn-dark text-white btn-lg" onclick="btnTimes()">x</button>
             <div></div>
-            <button id="btnNum0"   class="btn btn-dark text-white btn-lg" onclick="btnNum0Press();convertCurrency()">0</button>
-            <button id="btnDot"    class="btn btn-dark text-white btn-lg" onclick="btnDot()">.</button>
-            <button id="btnReset"  class="btn btn-dark text-white btn-lg" onclick="btnReset();convertCurrency()">c</button>
+            <button id="btnNum0" class="btn btn-dark text-white btn-lg" onclick="btnNum0Press();convertCurrency()">0</button>
+            <button id="btnDot" class="btn btn-dark text-white btn-lg" onclick="btnDot()">.</button>
+            <button id="btnReset" class="btn btn-dark text-white btn-lg" onclick="btnReset();convertCurrency()">c</button>
             <button id="btnDivide" class="btn btn-dark text-white btn-lg" onclick="btnDivide()">/</button>
             <!-- <button id="btnEqualTo" class = "btn btn-dark btn-lg" onclick="btnEqualTo()">=</button> -->
             <div></div>
         </div>
     </div>
 
-    <script src="node_modules/chart.js/dist/Chart.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="js/currency.js"></script>
     <script src="js/calculator.js"></script>
 </body>
